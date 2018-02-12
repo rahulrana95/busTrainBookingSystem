@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import 'antd/lib/date-picker/style/css';        // for css
 import { Router, Route, browserHistory } from 'react-router';
+import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import RouterJi from './routes';
 import App from './components/App';
 
