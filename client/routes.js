@@ -2,15 +2,24 @@ import React from 'react';
 import { Provider } from 'redux';
 import { Router, Route, browserHistory } from 'react-router';
 import App from './components/App';
-const routes =
-    /*<Provider>*/
-        <Router history={browserHistory}>
-            <Route path="/" component={App}>
+import { createStore, combineReducers } from 'redux';
 
-            </Route>
-        </Router>
-/*</Provider>*/;
+const sample = (state={},payload) => {
+  return payload;
+}
+
+// let reducer = combineReducers({
+//   sample
+// });
+// let store = createStore(reducer);
 
 
+let RouterJi = () =>
+<Router history={browserHistory}  >
+  <Route path="/" component={App}>
 
-module.exports = routes;
+  </Route>
+</Router>
+
+
+module.exports = RouterJi;

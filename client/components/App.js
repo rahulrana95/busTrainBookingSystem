@@ -1,18 +1,15 @@
 import React from 'react';
-import DatePicker from 'antd/lib/date-picker';  // for js
+import { Layout } from 'antd';
 import './App.css';
+
+const { Header, Footer, Sider, Content } = Layout;
+
+
 class App extends React.Component {
-  	data = () => {
-  		return (<div>Hi</div>);
-  	}
   render(){
-
-
     return (
-      <div className="bgColorGreen">Hi from rahul rana
-      	<button>Fetch</button>
-          (<DatePicker />
-      	{this.data()}
+      <div>
+      Rana 
       </div>
     );
   }
